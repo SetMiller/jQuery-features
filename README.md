@@ -12,3 +12,4 @@
 * [01_jQClone_v0.3](https://github.com/SetMiller/jQuery-features/tree/master/features/01_jQClone_v0.3)
 * [02_jQuery](https://github.com/SetMiller/jQuery-features/tree/master/features/02_jQuery)
 * [03_simpleSliders_v0.5](https://github.com/SetMiller/jQuery-features/tree/master/features/03_simpleSliders_v0.5)
+* [04_data attr](https://github.com/SetMiller/jQuery-features/tree/master/features/04_data%20attr)
