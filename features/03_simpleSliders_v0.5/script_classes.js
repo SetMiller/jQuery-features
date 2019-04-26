@@ -12,16 +12,14 @@ export default class Slider {
     obj.mouseBlock ? this.mouseBlock() : ''
   }
 
-  upChangeClass(){
-    // elem.eq(numb) выбираем элемент по номеру массива, аналогично elem[numb]
+  changeClass(direction = true){
     this.images.eq(this.counter).removeClass('show')
-    this.counter == this.images.length - 1 ? this.counter = 0 : this.counter++
-    this.images.eq(this.counter).addClass('show')
-  }
-
-  downChangeClass(){
-    this.images.eq(this.counter).removeClass('show')
-    this.counter == 0 ? this.counter = this.images.length - 1 : this.counter--
+    if (direction) {
+      this.counter == this.images.length - 1 ? this.counter = 0 : this.counter++
+    }
+    else {
+      this.counter == 0 ? this.counter = this.images.length - 1 : this.counter--
+    }
     this.images.eq(this.counter).addClass('show')
   }
 
@@ -29,11 +27,11 @@ export default class Slider {
     this.images.mousedown(() => {return false}).on('contextmenu', function(){return false})
   }
   autoChange(sliderInterval = 1000){
-    setInterval(() => this.upChangeClass(), sliderInterval)
+    setInterval(() => this.changeClass(false), sliderInterval)
   }
   autoCheck(autoParam = true){
-    this.btnNext.click(() => this.upChangeClass())
-    this.btnPrev.click(() => this.downChangeClass())
+    this.btnNext.click(() => this.changeClass())
+    this.btnPrev.click(() => this.changeClass(false))
     autoParam ? this.autoChange() : ''
   }
 }
