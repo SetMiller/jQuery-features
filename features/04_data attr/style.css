@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 30px auto
+}
+
+.some-block {
+  cursor: pointer;
+  display: flex
+}
+
+.question {
+  margin-left: 10px;
+  min-height: 30px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #9CAFB7;
+  padding: 5px;
+}
+
+.sleep {
+  display: none;
+}
+
+.another-block {
+  /* display: flex */
+  margin-top: 40px;
+  position: relative;
+}
+
+.answer {
+  position: absolute;
+  text-align: justify;
+}
