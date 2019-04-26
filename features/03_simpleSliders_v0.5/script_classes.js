@@ -3,7 +3,6 @@ export default class Slider {
     this.btnNext = $(obj.btnNext)
     this.btnPrev = $(obj.btnPrev)
     this.images = $(obj.images)
-    console.log(this.images)
     this.counter = 0
 
     // Проверяемм наличие кнопок, если их нет, то принудительно запускаем карусель
