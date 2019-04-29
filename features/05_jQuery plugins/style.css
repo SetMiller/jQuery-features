@@ -1,0 +1,17 @@
+.wrapper {
+  min-height: 10px;
+  cursor: pointer;
+  width: 700px;
+}
+
+.sleep {
+  display: none;
+}
+
+.question {
+  background: #9CAFB7
+}
+
+.answer {
+  background: #E6B89C
+}
