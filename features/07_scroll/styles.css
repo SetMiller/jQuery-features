@@ -1,0 +1,35 @@
+html, body{
+    margin: 0px;
+    background: #eee;
+    /* position: relative; */
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    background: #F9F2E8;
+    color: #809096;
+    min-height: 40px;
+    width: 100%;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.menu a {
+    padding:  30px 5px;
+    line-height: 18px;
+    margin: 0 10px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.content {
+    margin: 40px;
+}
+
+.menu a.active {
+   color: #FE938C;
+    /* padding: 0 10px;
+    height: 40px; */
+}
