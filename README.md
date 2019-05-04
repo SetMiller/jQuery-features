@@ -19,3 +19,4 @@
 * [08_add blocks and elements](https://github.com/SetMiller/jQuery-features/tree/master/features/08_add%20blocks%20and%20elements)
 * [09_scroll button](https://github.com/SetMiller/jQuery-features/tree/master/features/09_scroll%20button)
 * [10_simpleSliders_v0.6](https://github.com/SetMiller/jQuery-features/tree/master/features/10_simpleSliders_v0.6)
+* [11_make_jQuery_plugin](https://github.com/SetMiller/jQuery-features/tree/master/features/11_make_jQuery_plugin)
