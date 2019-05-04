@@ -20,3 +20,4 @@
 * [09_scroll button](https://github.com/SetMiller/jQuery-features/tree/master/features/09_scroll%20button)
 * [10_simpleSliders_v0.6](https://github.com/SetMiller/jQuery-features/tree/master/features/10_simpleSliders_v0.6)
 * [11_make_jQuery_plugin](https://github.com/SetMiller/jQuery-features/tree/master/features/11_make_jQuery_plugin)
+* [12_jQuery_slider_plugin](https://github.com/SetMiller/jQuery-features/tree/master/features/12_jQuery_slider_plugin)
