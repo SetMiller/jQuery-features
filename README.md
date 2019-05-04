@@ -17,3 +17,5 @@
 * [06_animate](https://github.com/SetMiller/jQuery-features/tree/master/features/06_animate)
 * [07_scroll](https://github.com/SetMiller/jQuery-features/tree/master/features/07_scroll)
 * [08_add blocks and elements](https://github.com/SetMiller/jQuery-features/tree/master/features/08_add%20blocks%20and%20elements)
+* [09_scroll button](https://github.com/SetMiller/jQuery-features/tree/master/features/09_scroll%20button)
+* [10_simpleSliders_v0.6](https://github.com/SetMiller/jQuery-features/tree/master/features/10_simpleSliders_v0.6)
