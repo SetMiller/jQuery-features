@@ -19,12 +19,15 @@ html, body, ul, li{
 }
 
 .gallery .slider img{
+  width: 100%;
   position: absolute;
-  width: 0;
   left: 0;
-  transition: opacity 1s;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 .gallery .slider img.showed{
-   width: 100%;
+  opacity: 1;
 }

@@ -1,6 +1,7 @@
 (function($){
 
   // @method slider
+  // @param  {sliderEffect} вариант отработки слайдера
   // @param  {auto} автоматическая прокрутка
   // @param  {mouseBlock} блокировка mouseDown и contextmenu
   // @param  {autoInterval} интервал смены слайдера
@@ -19,7 +20,7 @@
       const btnPrev = $(this).find('.prev')
       const images = $(this).find('img')
       let index = 0
-      // isRun = false
+      isRun = false
       
       // Проверяемм наличие кнопок, если их нет, то принудительно запускаем карусель
       btnNext.length !== 0 ? autoCheck(options.auto) : autoChange(options.autoInterval)
@@ -27,21 +28,17 @@
       options.mouseBlock ? mouseBlock() : ''
         
       function changeClass(direction = true){
-        // if (isRun) {
-        //   return
-        // }
-        // isRun = true
+        if (isRun){
+          return
+        }
+        isRun = true
         images.eq(index)
-                        .css({
-                          left: 0,
-                          top: 0,
-                          right: 'auto',
-                          bottom: 'auto'
-                        })
-                        .stop(true, false)
-                        .animate({
-                          width: 0,
-                        }, 500);
+          // .stop(true, false)
+          .animate({
+            'left': '-100%'
+          }, 1000, (function() {
+            $(this).css("opacity", "0")
+          }))
         if (direction) {
           index++
           if (index > images.length - 1)  {
@@ -55,16 +52,16 @@
           }
         }
         images.eq(index)
-                        .css({
-                          left: 'auto',
-                          top: 'auto',
-                          right: 0,
-                          bottom: '33px'
-                        })
-                        .stop(true, false)
-                        .animate({
-                            width: '100%'
-                        }, 500);
+          .css({
+            'left': '100%', 
+            'opacity': '1'
+          })
+          // .stop(true, false)
+          .animate({
+            'left': 0
+          }, 1000, () => {
+            isRun = false
+          })
       }
     
       function mouseBlock(){
