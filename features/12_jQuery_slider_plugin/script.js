@@ -6,14 +6,14 @@ $(function(){
   images1.slider({
     auto: true,
     mouseBlock: true,
-    autoInterval: 6001,
+    autoInterval: 2001,
   })
 
-  // images2.slider({
-  //   auto: false,
-  //   mouseBlock: true,
-  //   autoInterval: 2000,
-  // })
+  images2.slider({
+    auto: false,
+    mouseBlock: true,
+    autoInterval: 2000,
+  })
 
 })
 

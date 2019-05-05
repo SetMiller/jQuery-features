@@ -31,36 +31,14 @@
           return
         }
         isRun = true
-        images.eq(index)
-          // .stop(true, false)
-          .animate({
-            'left': '-100%'
-          }, 1000, (function() {
-            $(this).css("opacity", "0")
-          }))
-        if (direction) {
-          index++
-          if (index > images.length - 1)  {
-          index = 0 
-          }
+        images.eq(index).animate({'left': '-100%'}, 1000, (function() {$(this).css("opacity", "0")}))
+        if (direction) {index++
+          if (index > images.length - 1)  {index = 0}
         }
-        else {
-          index--
-          if (index < 0) {
-            index = images.length - 1 
-          }
+        else {index--
+          if (index < 0) {index = images.length - 1}
         }
-        images.eq(index)
-          .css({
-            'left': '100%', 
-            'opacity': '1'
-          })
-          // .stop(true, false)
-          .animate({
-            'left': 0
-          }, 1000, () => {
-            isRun = false
-          })
+        images.eq(index).css({'left': '100%','opacity': '1'}).animate({'left': 0}, 1000, () => {isRun = false})
       }
     
       function mouseBlock(){
