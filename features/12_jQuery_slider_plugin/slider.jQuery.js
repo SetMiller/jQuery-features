@@ -1,11 +1,10 @@
 (function($){
 
   // @method slider
-  // @param  {sliderEffect} вариант отработки слайдера
   // @param  {auto} автоматическая прокрутка
   // @param  {mouseBlock} блокировка mouseDown и contextmenu
   // @param  {autoInterval} интервал смены слайдера
-  // @return {Number}  возвращаем объект jQuery
+  // @return {jQuery}  возвращаем объект jQuery
 
   $.fn.slider = function(userSettings){
       
